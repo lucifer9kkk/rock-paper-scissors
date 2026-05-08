@@ -9,4 +9,6 @@ function getComputerChoice() {
     }
 }
 
-console.log(getComputerChoice())
+function getHumanChoice() {
+    return prompt("Welcome to the game!! \nPlease type your choice\n'Rock' - 'Paper' - 'Scissor'");
+}
