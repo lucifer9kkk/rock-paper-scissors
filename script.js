@@ -18,7 +18,7 @@ let computerScore = 0
 
 function playRound(humanChoice , computerChoice) {
 
-    if (humanChoice === computerChoice) {
+if (humanChoice === computerChoice) {
         return "Tie, Play again!";
     } else if (
         humanChoice === "rock" && computerChoice === "scissor" ||
@@ -26,12 +26,14 @@ function playRound(humanChoice , computerChoice) {
         humanChoice === "scissor" && computerChoice === "paper"
     )   {
         return "You Win!!"; 
+    }   else if (humanChoice !== "rock" && humanChoice !== "paper" && humanChoice !== "scissor") {
+        return "Wrong Input Please Try Again"
     }   else {
-        return "Computer Win!! You Lose mate."
+        "Computer Win!! You Lose mate."
     }
 }   
 
-function scoreUpdate() {
+function scoreUpdate(result) {
     if (result === "You Win!!") {
         humanScore++;
     }   else if (result === "Computer Win!! You Lose mate.") {
